@@ -136,7 +136,7 @@ a:hover {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 400px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -205,6 +205,13 @@ section {
 .section__text__p1 {
   text-align: center;
 }
+
+.section__text__pv {
+  text-align: center;
+  font-size: 3.00rem;
+
+}
+
 
 .section__text__p2 {
   font-size: 1.75rem;
