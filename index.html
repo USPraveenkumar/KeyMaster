@@ -1,325 +1,276 @@
 <html lang="en"><head>
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/jpeg" href="/Favicon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ALSDAF</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mediaqueries.css">
-     <!-- Whatsapp float --> 
-<style>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpeg" href="/Favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALSDAF</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+       <!-- Whatsapp float --> 
+  <style>
 .float{
-  position:fixed;
-  width:60px;
-  height:60px;
-  bottom:40px;
-  right:30px;
-  background-color:#25d366;
-  color:#FFF;
-  border-radius:50px;
-  text-align:center;
-font-size:30px;
-  box-shadow: 2px 2px 3px #999;
-z-index:100;
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:30px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+  font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+  z-index:100;
 }
 
 .my-float{
-  margin-top:16px;
+    margin-top:16px;
 }
 </style>
-</head>
-<body>
-  <nav id="desktop-nav">
-    <div class="logo-container">
-      <img src="Favicon.png" alt="ALSDAF Logo" class="nav-logo">
-      <div class="title-image-container">
-        <img src="ALSDAF_Logo.png" alt="Title Image" class="title-image">
-      </div>
-    </div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#profile">Our Vision</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#reviews">Expertise</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo-container">
-      <img src="Favicon.png" alt="ALSDAF Logo" class="nav-logo">
-      <div class="title-image-container">
-        <img src="ALSDAF_Logo.png" alt="Title Image" class="title-image">
-      </div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#profile" onclick="toggleMenu()">Vision</a></li>
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#services" onclick="toggleMenu()">Services</a></li>
-        <li><a href="#reviews" onclick="toggleMenu()">Expertise</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </div></nav>
-  <div id="carousel" class="carousel">
-    <img src="./assets/Slide1.jpg!s1" alt="Slide 1" style="display: none;">
-    <img src="./assets/Slide2.avif" alt="Slide 2" style="display: none;">
-    <img src="./assets/Slide3.avif" alt="Slide 3" style="display: block;">
-    <img src="./assets/Slide4.avif" alt="Slide 4" style="display: none;">
-  </div>
-  <script>
-    const slides = document.querySelectorAll('#carousel img');
-    let currentSlide = 0;
-         
-    function showSlide() {
-      slides.forEach(slide => {
-        slide.style.display = 'none';
-      });
-
-      slides[currentSlide].style.display = 'block';
-    }
-
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide();
-    }
-
-    function prevSlide() {
-      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-      showSlide();
-    }
-
-    function autoSlide() {
-          nextSlide();
-    }
-
-    setInterval(autoSlide, 3000);
-    showSlide();
-  </script>
- 
-
-
-  <section id="profile">  
-    <div class="section__pic-container">
-      <img src="./assets/Lock.png" alt="Lock Img">
-    </div>
-    <div class="section__text">
-      <h3 class="section__text__pv">Our Vision</h3>
-      <p class="section__text__p2">Budget Friendly Services<br>that ensured great<br>security &amp; safety</p>
-      <div class="btn-container">
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Us
-        </button>
-      </div>
-      
-    </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Why Choose Us?</p>
-    <h1 class="title">About Us</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img src="./assets/Main.png" alt="Profile picture" class="about-pic">
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon">
-            <h3>Expertise</h3>
-            <p>Equipped with<br>modern tools &amp; equipments</p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon">
-            <h3>Employees</h3>
-            <p>Experienced employees<br>are here</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>
-            ALSDAF is the best place for all your key related needs. We deal with all types of keys and locks. 
-            Our services are budget-friendly and ensure great security and safety. We are equipped with modern tools and equipment. Our employees are experienced and skilled.
-          </p>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo-container">
+        <img src="Favicon.png" alt="ALSDAF Logo" class="nav-logo">
+        <div class="title-image-container">
+          <img src="ALSDAF_Logo.png" alt="Title Image" class="title-image">
         </div>
       </div>
-    </div>
-    <!-- <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#services'"
-    /> -->
-  </section>
-  <section id="services">
-    <p class="section__text__p1">Explore Our</p>
-    <h1 class="title">Services</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/CarKey.jpg" alt="Project 1" class="project-img">
-          </div>
-          <h2 class="experience-sub-title project-title">Car Keys</h2>
-          <p>Car Keys Duplication<br> with Company Logo</p> 
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/AccessCard.png" alt="Project 2" class="project-img">
-          </div>
-          <h2 class="experience-sub-title project-title">Access Card</h2>
-          <p>Access Card Duplication<br> Plastic RFID Cards</p>
-          </div>
-        </div>
-  </div></section>
-  <br><br>
-  <section id="">
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/Watch.png" alt="Project 1" class="project-img">
-          </div>
-          <h2 class="experience-sub-title project-title">Watch</h2>
-          <p>Watch Repairs  &amp;<br> Battery Replacement</p>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/SmartLock.png" alt="Project 2" class="project-img">
-          </div>
-          <h2 class="experience-sub-title project-title">Smart Lock</h2>
-          <p>Smart Lock for<br> &amp; Repair</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="reviews">
-    <br><br>
-    <h1 class="title">Expertise</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">We Are Best In</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-              <div>
-                <h3>Car Keys</h3>
-                <p></p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-              <div>
-                <h3>Access Cards</h3>
-                <p></p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-              <div>
-                <h3>Watch Repairs</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-              <div>
-                <h3>Smart Locks</h3>
-              </div>
-            </article>
-          </div>
-        </div>
-        <!-- <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>PostgreSQL</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Node JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Express JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Git</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div> -->
-        </div>
-      </div>
-    
-
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Us</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-        <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
-        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://api.whatsapp.com/send?phone=919042397713&amp;text=I%20want%20to%20find%20out%20about%20your%20products" class="float" target="_blank">
-<i class="fa fa-whatsapp my-float"></i></a>
-  
-  <footer>
-    <nav>
-      <div class="nav-links-container">
+      <div>
         <ul class="nav-links">
           <li><a href="#profile">Our Vision</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#reviews">Expertise</a></li>
-          <li><a href="">Home </a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
     </nav>
-    <p class="copyright">Copyright © <span id="current-year">2024</span> ALSDAF • All Rights Reserved</p>
-  </footer>
-  <script src="script.js"></script>
+    <nav id="hamburger-nav">
+      <div class="logo-container">
+        <img src="Favicon.png" alt="ALSDAF Logo" class="nav-logo">
+        <div class="title-image-container">
+          <img src="ALSDAF_Logo.png" alt="Title Image" class="title-image">
+        </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">Vision</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+          <li><a href="#reviews" onclick="toggleMenu()">Expertise</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </div></nav>
+    <div id="carousel" class="carousel">
+      <img src="./assets/Slide1.jpg!s1" alt="Slide 1" style="display: none;">
+      <img src="./assets/Slide2.avif" alt="Slide 2" style="display: none;">
+      <img src="./assets/Slide3.avif" alt="Slide 3" style="display: block;">
+      <img src="./assets/Slide4.avif" alt="Slide 4" style="display: none;">
+    </div>
+    <script>
+      const slides = document.querySelectorAll('#carousel img');
+      let currentSlide = 0;
+           
+      function showSlide() {
+        slides.forEach(slide => {
+          slide.style.display = 'none';
+        });
+  
+        slides[currentSlide].style.display = 'block';
+      }
+  
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide();
+      }
+  
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide();
+      }
 
+      function autoSlide() {
+            nextSlide();
+      }
 
-</section></body></html>
+      setInterval(autoSlide, 3000);
+      showSlide();
+    </script>
+   
+
+ 
+    <section id="profile">  
+      <div class="section__pic-container">
+        <img src="./assets/Lock.png" alt="Lock Img">
+      </div>
+      <div class="section__text">
+        <h3 class="section__text__pv">Our Vision</h3>
+        <p class="section__text__p2">Budget Friendly Services<br>that ensured great<br>security &amp; safety</p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Us
+          </button>
+        </div>
+        
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Why Choose Us?</p>
+      <h1 class="title">About Us</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/Main.png" alt="Profile picture" class="about-pic">
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon">
+              <h3>Expertise</h3>
+              <p>Equipped with<br>modern tools &amp; equipments</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon">
+              <h3>Employees</h3>
+              <p>Experienced employees<br>are here</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              ALSDAF is the best place for all your key related needs. We deal with all types of keys and locks. 
+              Our services are budget-friendly and ensure great security and safety. We are equipped with modern tools and equipment. Our employees are experienced and skilled.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#services'"
+      /> -->
+    </section>
+    <section id="services">
+      <p class="section__text__p1">Explore Our</p>
+      <h1 class="title">Services</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/CarKey.jpg" alt="Project 1" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Car Keys</h2>
+            <p>Car Keys Duplication<br> with Company Logo</p> 
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/AccessCard.png" alt="Project 2" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Access Card</h2>
+            <p>Access Card Duplication<br> Plastic RFID Cards</p>
+            </div>
+          </div>
+    </div></section>
+    <br><br>
+    <section id="">
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/Watch.png" alt="Project 1" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Watch</h2>
+            <p>Watch Repairs  &amp;<br> Battery Replacement</p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/SmartLock.png" alt="Project 2" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Smart Lock</h2>
+            <p>Smart Lock for<br> &amp; Repair</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <br><br>
+      <h1 class="title">Expertise</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">We Are Best In</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Car Keys</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Access Cards</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Watch Repairs</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Smart Locks</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          </div>
+        </div>
+      
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Us</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=919042397713&amp;text=I%20want%20to%20find%20out%20about%20your%20products" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i></a>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#profile">Our Vision</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">Expertise</a></li>
+            <li><a href="">Home </a></li>
+          </ul>
+        </div>
+      </nav>
+      <p class="copyright">Copyright © <span id="current-year">2024</span> ALSDAF • All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
