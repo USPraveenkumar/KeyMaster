@@ -3,6 +3,7 @@
   width: 100%;
   box-sizing: border-box;
   padding: 0 1rem;
+  height: 85px;
 }
 
 .nav-links {
@@ -136,10 +137,18 @@
   }
   .contact-info-container {
     margin: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
   .contact-info-container p,
   .nav-links li a {
     font-size: 1rem;
+  }
+
+  .contact-info-container p {
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
   .experience-sub-title {
     font-size: 1.25rem;
@@ -148,6 +157,7 @@
     font-size: 1.5rem;
   }
   .nav-links {
+    margin-top: 5rem;
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
