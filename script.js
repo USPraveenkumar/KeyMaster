@@ -10,3 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('current-year').textContent = currentYear;
 });
 
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('body'); 
+  if (window.scrollY > 50) { 
+    navbar.classList.add('shrink');
+  } else {
+    navbar.classList.remove('shrink');
+  }
+})
+
